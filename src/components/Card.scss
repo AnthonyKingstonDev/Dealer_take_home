@@ -1,0 +1,107 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    // stops the cards changing sizes when selected
+    border: 2px solid transparent;
+    width: 390px;
+    min-height: 420px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    overflow: hidden;
+    flex: 0 0 auto;
+    max-width: 390px;
+}
+
+.card-image {
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardComponents {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.card-body {
+    font-size: 14px;
+    line-height: 1.28;
+    color: #555;
+    white-space: pre-line;
+}
+
+.card-button {
+    margin-top: auto;
+    margin-bottom: 12px;
+    width: 90%;
+    align-self: center;
+    background: #0d87e9;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+// stops the cards from warping when change resolutions to mobile mode
+@media (max-width: 768px) {
+
+  .page-container {
+    // allows the cards to be wider on mobile
+    max-width: none !important;
+    padding: 0 10px !important;   
+    width: 100%;
+  }
+
+  .cardContainer {
+    width: 100%;
+    padding: 0;                    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100% !important;
+    max-width: none !important;    
+    margin: 0 0 35px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;   
+    max-width: 420px;
+  }
+}
+.card.selected {
+    border: 3px solid #0d87e9;
+    box-shadow: 0 0 12px rgba(13, 135, 233, 0.35);
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
