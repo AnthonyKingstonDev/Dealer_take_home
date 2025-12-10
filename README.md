@@ -16,8 +16,12 @@ Photos
 Screenshot taken in Chrome on a 1920×1080 monitor.
 ![Full screenshot](image-1.png)
 Tablet view 
+
+
 ![alt text](image-2.png)
 Mobile View 
+
+
 ![alt text](image-3.png)
 
 Temple Project Brief:
